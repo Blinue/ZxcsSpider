@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ZxcsSpider.Datas {
     // 使用 sqlite
-	class BookDbContext: DbContext {
+    class BookDbContext: DbContext {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             optionsBuilder.UseSqlite(@"Data Source=book.db");
         }
