@@ -126,7 +126,7 @@ namespace ZxcsSpider {
                 } else {
                     ++curId;
 
-                    // 等待一定时间，增大获取间隔
+                    // 等待一定时间，增大请求间隔
                     await Task.Delay(delay);
                     tasks[tasks.FindIndex(t => t == task)] = FetchAndSaveBookAsync(curId);
                 }
